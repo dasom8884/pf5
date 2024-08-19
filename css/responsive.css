@@ -1,0 +1,526 @@
+@media screen and (max-width:768px){
+  
+  
+  .wrap{
+    padding:0 20px; 
+  }
+/*  상단  */
+  header{
+    position: initial;
+  }
+  header div.wrap{
+    justify-content: space-between;
+  }
+  header h1{
+    margin-left: 20px;
+  }
+  header h1 a{
+    width: 90px;
+  }
+  header div.wrap ul{
+    display: none
+  }
+  header span{
+    margin-left: 50px;
+  }
+  header span button{
+    width: 90px;
+    font-size: calc(17px * 0.8);
+  }
+  header .ham{
+    display: block;
+    font-size: 0;
+    background-image: url(../img/ham.svg);
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    cursor: pointer;
+  }
+  
+/*  title  */
+  div#title{
+    padding-top: 10px;
+  }
+  div#title div.wrap h2{
+    font-size: calc(48px * 0.7);
+    position: relative;
+    text-align: center;
+    line-height: 1.4;
+    justify-content: center;
+  }
+  div#title div.wrap h2 br{
+    display: block;
+  }
+  div#title div.wrap h2 span{
+    width: 50px;
+    position: absolute;
+    right: 85px;
+    top: 55px;
+  }
+  div#title div.wrap h2 span::after{
+  margin-left: 55px;
+  width: 24px;
+  }
+  div#title div.wrap p{
+    font-size: calc(30px * 0.8); 
+    text-align: center;
+    line-height: 1.4;
+    margin-bottom: 40px;
+  }
+  div#title div.wrap p >span{
+    display: block;
+  }
+  div#title div.wrap div.titleimg{
+
+  }
+  div#title div.wrap div.titleimg::before{
+    width: 70px;
+    height: 70px;
+  }
+  div#title div.wrap div.titleimg::after{
+
+  width: 100px;
+  height: 100px;
+  }
+  div#title div.wrap img:first-child{
+    display: none;
+  }
+  div#title div.wrap img:last-child{
+    display: block;
+    width: 100%;
+  }
+  
+/*  title2  */
+  div#title2{
+  }
+  div#title2 div.wrap{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+  }
+  div#title2 div.wrap h2{
+    margin-top: 0;
+    font-size: calc(48px * 0.7);
+    padding-top: 60px;
+  }
+  div#title2 div.wrap h2 span::before{
+    width: 10px;
+    height: 10px;
+    left: calc(50% - 5px);
+    top: -17px;
+  }
+  div#title2 .slick-list{
+    overflow: initial;
+    
+  }
+  div#title2 div.wrap ul li{
+   
+  display: flex;
+  justify-content: center;
+  }
+  div#title2 div.wrap ul li figure{
+    height: calc(460px * 0.9);
+    padding: 20px 60px;
+  }
+  div#title2 .t-button{
+    position: absolute;
+    bottom: -70px;
+    left: calc(50% - 20px);
+    width: 40px;
+  }
+  div#title2 div.wrap ul li p{
+    
+  left: calc(50% - 115px);
+  padding: 20px 50px;
+  bottom: -35px;
+  }
+  
+  div#title2 div.wrap div.textbox ul li{
+   font-size: calc(58px * 0.7);
+   white-space: nowrap;
+  }
+  #title2 div.wrap div.textbox ul li:nth-child(n+3):nth-child(-n+4){
+    display: none;
+  }
+  #title2 .slick-prev::before{
+    content:'';
+    background-image: url(../img/left.svg);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    display: inherit;
+    background-repeat: no-repeat;
+  }
+    #title2 .slick-next::before{
+    content:'';
+    background-image: url(../img/right.svg);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    display: inherit;
+    background-repeat: no-repeat;
+  }
+  div#title2 div.wrap div.textbox{
+    
+  overflow: hidden;
+  }
+  
+/*  place  */
+  section#place{
+    
+  }
+  section#place .wrap{
+    flex-direction: column;
+    gap: 40px;
+   }
+  section#place div.place-textbox{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  section#place .wrap h2{
+    font-size: calc(68px * 0.5);
+  }
+  section#place div.place-textbox p{
+  font-size: calc(28px * 0.7);
+  }
+  section#place div.place-textbox p br{
+    display: none;
+  }
+  section#place div.place-textbox a{
+
+  padding: 15px 30px;
+  font-size: calc(21px * 0.8);
+  }
+  section#place div.wimg{
+    width: 400px;
+    height: auto;
+  }
+  section#place div.wimg img{
+    
+  }
+/*  banner  */
+  section#banner{
+    overflow: hidden;
+  }
+  section#banner .banner-text{
+    font-size: calc(220px * 0.5);
+    opacity: 0.5;
+    width: 200%;
+  }
+  section#banner .banner-text .banner-text1{
+
+
+  }
+  section#banner .banner-text .banner-text1 p{
+    animation-name: t1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-right: none;
+    letter-spacing: -4px;
+  }
+  @keyframes t1{
+    0%{
+      transform: translateX(0);
+    }
+    100%{
+      transform: translateX(50%);
+    }
+    
+  }
+  section#banner .banner-text1{
+   
+  }
+  section#banner .banner-text1 span:nth-child(2){
+    display: none;
+  }
+ section#banner .banner-text .banner-text2{
+    animation-name: t2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-right: none;
+    letter-spacing: -4px;
+  }
+    @keyframes t2{
+    0%{
+      transform: translateX(0);
+    }
+    100%{
+      transform: translateX(-50%);
+    }
+    
+  }
+ section#banner .banner-text2 > span{
+    display: none;
+  }
+  section#banner .banner-text p:nth-child(2){
+    display: block;
+  }
+  section#banner .banner-img{
+    width: 400px;
+    height: auto;
+    top: calc(50% - 116.8px);
+    left: calc(50% - 200px);
+  }
+  section#banner .slick-prev{
+    
+  }
+  section#banner .slick-next::before{
+    content:'';
+    background-image: url(../img/right.svg);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    display: inherit;
+    background-repeat: no-repeat;
+      margin-left: 8px;
+  }  
+    section#banner .slick-prev::before{
+    content:'';
+    background-image: url(../img/left.svg);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    display: inherit;
+    background-repeat: no-repeat;
+    
+  }  
+/*  menu  */
+  div.tab{
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom:  20px;
+  }
+  #menu div.wrap{
+    padding-top:60px;
+    padding-bottom: 60px;
+  }
+  #menu div.wrap > img{
+    width: 250px;
+  }
+  #menu div.wrap h2{
+    font-size: calc(58px * 0.6);
+  }
+  #menu div.wrap h2::after{
+    width: 40px;
+    height: 40px;
+  }
+  #menu div.wrap p{
+    font-size: calc(21px * 0.8);
+  }
+  #menu div.wrap div.tab ul.tab-btn{
+    flex-wrap: wrap;
+  }
+  #menu div.wrap div.tab ul.tab-cont{
+    display: initial;
+    width: 100%;
+  }
+  #menu div.wrap div.tab ul.tab-cont li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #menu .slick-next::before{
+    content:'';
+    background-image: url(../img/right.svg);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    display: inherit;
+    background-repeat: no-repeat;
+      margin-left: 8px;
+  }  
+  #menu .slick-prev::before{
+    content:'';
+    background-image: url(../img/left.svg);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    display: inherit;
+    background-repeat: no-repeat;
+  }  
+  
+/*  point  */
+  #point1 div.wrap{
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  #point1 div.wrap h2{
+    font-size: calc(58px * 0.6);
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+  }
+  #point1 div.wrap h2::before{
+    position: absolute;
+    left: -5px;
+    top: 0;
+  }
+  #point1 div.wrap h2 span{
+    width: calc(385px * 0.7);
+    height: calc(97px * 0.7);
+  }
+  #point1 div.wrap p:nth-of-type(1){
+    font-size: calc(30px * 0.6);
+  }
+  #point1 div.wrap p:nth-of-type(1)::before{
+    
+  }
+  #point1 div.wrap h3{
+    font-size: calc(48px * 0.6);
+    text-align: center;
+    line-height: 1.4;
+  }
+  #point1 div.wrap h3 br{
+  display: block;
+  }
+  #point1 div.wrap p:nth-of-type(2){
+    font-size: calc(21px * 0.7);
+    text-align: center;
+    line-height: 1.4;
+  }
+  #point1 div.wrap p:nth-of-type(2) strong{
+    display: block;
+  }
+  #point1 div.pointimg img{
+    
+  width: calc(85vw - 30px);
+  height: 281px;
+  }
+/*  point2  */
+  #point2 div.wrap h2{
+    font-size: calc(48px * 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.4;
+  }
+  #point2 div.wrap img{
+    width: 200px;
+  }
+  #point2 div.wrap p{
+    font-size: calc(28px * 0.8);
+    text-align: center;
+   }
+  #point2 div.wrap h3 br{
+    display: block;
+  } 
+  
+  
+/*  point3  */
+  #point3 div.wrap h2{
+    font-size: calc(48px * 0.6);
+  }
+  #point3 div.wrap div.poin3-img{
+    width: 320px;
+  }
+  #point3 div.wrap p{
+    font-size: calc(28px * 0.8);
+    text-align: center;
+    line-height: 1.4;
+  }
+   #point3 div.wrap p br{
+    display: block;
+  } 
+  
+/*  문의  */
+  #Franchise{
+    height: initial;
+  }
+  #Franchise div.wrap{
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+   
+    width: initial;
+    row-gap: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  #Franchise div.wrap h2{
+   font-size: calc(58px * 0.7);
+  }
+  #Franchise div.wrap div.f-img{
+   width: 50%;
+  }
+  #Franchise div.wrap div.f-img img{
+    width: 100%;
+  }
+  #Franchise div.wrap div.inquiry form p{
+    font-size: calc(24px * 0.8);
+  }
+  #Franchise div.wrap div.inquiry form > input{
+  height: 45px;
+  margin-bottom: 25px;
+  width: 90%;
+  }
+  #Franchise div.wrap button{
+    display: block;
+    margin: 0 auto;
+  }
+  
+/*  footer  */
+  footer .wrap{
+    padding-bottom: 30px;
+  }
+  footer div.wrap h1{
+    padding-top:20px;
+    width: 100px;
+  }
+  footer div.wrap ul.sns{
+    top: 20px;
+    right: 20px;
+  }
+  footer div.wrap ul.fnb li a{
+    font-size: calc(17px * 0.8);
+    white-space: nowrap;
+    padding: 10px 10px 10px 0;
+  }
+  footer div.wrap p:nth-of-type(1){
+    font-size: calc(16px * 0.8);
+  }
+  footer div.wrap address{
+    font-size: calc(16px * 0.8);
+  }
+  footer div.wrap ul.info{
+    font-size: calc(16px * 0.8);
+    flex-wrap: wrap;
+  }
+  footer div.wrap p:nth-of-type(2){
+    font-size: calc(16px * 0.8);
+  }
+/*  top  */
+  button.top{
+    right: 30%;
+    width: 60px;
+    height: 60px;
+    font-size: calc(21px * 0.8);
+  }
+  button.top::before{
+    width: 10px;
+    height: 10px;
+  }
+  
+  
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
